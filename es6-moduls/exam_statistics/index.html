@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exam Statistics June</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <header class="clearfix">
+        <h1>Exam Statistics June</h1>
+        <p>Total students:
+            <span class="total">%count%</span>
+        </p>
+        <div>
+            passed
+            <span class="passedPercentage"></span>
+            <span class="passed">0</span>
+        </div>
+        <div>
+            failed
+            <span class="failedPercentage"></span>
+            <span class="failed">0</span>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form>
+                <select name="subject" id="subject">
+                    <option value="-">-</option>
+                    <option value="CSS">CSS</option>
+                    <option value="WEB">WEB</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
+                <input type="text" name="student" id="student" placeholder="Name Surname">
+                <input type="number" name="grade" id="grade" placeholder="Grade" min="5" max="10">
+                <input type="button" value="ADD" id="add">
+            </form>
+        </section>
+        <section>
+            <div class="errorMessage"></div>
+            <div class="passedSection">passed
+                <ul class="passedList"></ul>
+            </div>
+            <div class="failedSection">failed
+                <ul class="failedList">
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/data_module.js"></script>
+    <script src="./js/ui_module.js"></script>
+    <script src="./js/controller_module.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            console.log("DOM is fully loaded");
+            controllerModule.init();
+        });
+    </script>
+</body>
+
+</html>

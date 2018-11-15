@@ -1,0 +1,27 @@
+h1.container{
+    text-align: center;
+    border: none;
+}
+.container {
+    max-width: 600px;
+    margin-top: 20px;
+    border: 1px solid silver;
+}
+fieldset {
+    border-width: 2px;
+    border-style: groove;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: decimal;
+}
+
+label {
+    width: 100%;
+    display: block;
+}
+
+select {
+    margin: 10px 0;
+}

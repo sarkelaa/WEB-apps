@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie festival</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+
+</head>
+
+<body>
+    <h1 class="container">Movie festival</h1>
+    <div class="container">
+        <p>Please fill in the form</p>
+        <span>Movie</span>
+
+        <fieldset class="form-group">
+            <label>Title
+                <input id="title" type="text" name="title" class="form-control">
+            </label>
+            <label>Length(min)
+                <input id="movieDuration" type="number" name="length" class="form-control">
+            </label>
+            <select id="dropDown" class="form-control bg-light">
+                <option id="emptyOption" value="-">-</option>
+                <option value="horror">Horor</option>
+                <option value="comedy">Comedy</option>
+                <option value="action">Action</option>
+                <option value="drama">Drama</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+            <input id="submitButton" type="button" value="Create Movie" class="form-control bg-success">
+
+            <ul id="addedMovie"></ul>
+            <p class="errorMessage"></p>
+
+        </fieldset>
+        <!-- <p class="moviesLength"></p> -->
+
+        <span>Program</span>
+        <fieldset class="form-group">
+            <label>Date
+                <input type="date" name="date" id="inputDate" placeholder="dd/mm/yy" class="form-control">
+            </label>
+            <input type="button" id="programButton" name="submit" value="Create Program" class="form-control bg-success">
+            <p class="errorDateMessage"></p>
+
+
+
+
+            <select name="movies" id="movies" class="form-control bg-light">
+                <option value="-">-</option>
+            </select>
+            <select name="programs" id="programs" class="form-control bg-light">
+                <option value="-">-</option>
+            </select>
+            <!-- <ul id="movieInProgram" class="form-control"></ul> -->
+
+            <input type="button" id="movieToProgramButton" value="Add  movie to program" class="form-control bg-success">
+            <ul id="programList"></ul>
+        </fieldset>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("DOM fully loaded and parsed");
+            controller.init();
+        });
+
+    </script>
+
+</body>
+
+</html>

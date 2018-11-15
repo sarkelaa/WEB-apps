@@ -1,0 +1,60 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    border-radius: 10px;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+h1.container {
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+    background: none;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+.form {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(190, 190, 190);
+}
+
+.form * {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    padding: 10px;
+    border: none;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input[type="button"] {
+    background-color: rgb(12, 114, 12);
+    color: white;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+

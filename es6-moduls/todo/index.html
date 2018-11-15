@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div>
+        <input type="text" id="input">
+        <input type="button" value="ADD" id="add_button">
+        <div>To Do</div>
+        <ul class="todo"></ul>
+        <div>Done</div>
+        <ul class="done"></ul>
+    </div>
+
+
+    <script src="./js/data_module.js"></script>
+    <script src="./js/ui_module.js"></script>
+    <script src="./js/controller_module.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            console.log("DOM is fully loaded");
+            controllerModule.init();
+        });
+
+    </script>
+</body>
+
+</html>
